@@ -1,4 +1,3 @@
-  
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -20,7 +19,7 @@ spec:
         app: bootcamp-html
     spec:
       containers:
-      - name: bootcamp-html
-        image: aliserkantasci/bootcamp:v$DOCKER_BUILD_NUMBER
-        ports:
-        - containerPort: 80
+        - name: bootcamp-html
+          image: flyingcircusbot/bootcamp:v$DOCKER_BUILD_NUMBER
+          ports:
+            - containerPort: 80
